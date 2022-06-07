@@ -1,0 +1,104 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* Generales */
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+/* Principal */
+.principal {
+    display: flex;
+    max-width: 768px;
+    max-height: 420px;
+}
+
+
+
+/* Columna */
+.columna {
+    color: white;
+    padding: 1.5rem;
+    width: 25%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    
+}
+
+.columna.activa {
+    width: 60%;
+}
+
+
+.columna:first-of-type{
+    border-radius: 1rem 0 0 1rem;
+}
+.columna:last-of-type{
+    border-radius: 0 1rem 1rem 0;
+}
+
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding-bottom: 2rem;
+    
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+  
+}
+
+.titulo {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.texto {
+    font-size: 15px;
+    padding-bottom: 3rem;
+    /* flex-grow: 1; */
+}
+
+.enlace {
+    text-decoration: none;
+    background-color: white;
+    
+    padding: .5rem .5rem;
+    border-radius: 1rem;
+    font-size: 12px;
+}
+
+.sedans .enlace {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .enlace {
+    color: hsl(184, 100%, 22%);
+  
+}
+
+.luxury .enlace {
+    color: hsl(179, 100%, 13%);
+}
